@@ -11,9 +11,10 @@ public class ClassesAndObjects {
     person1.age = 45;
     person2.name = "Andrey";
     person2.age = 32;
+    person2.speak(); //вывод метода speak
 
 //Вывод значений класса person
-        System.out.println("Your neme is: "+person1.name+ " and your age: "+person1.age);
+        System.out.println("Your neme is: "+person1.name+ ", and your age: "+person1.age);
 
     //установка значений полей
         myCar.make = "Toyota";
@@ -29,8 +30,11 @@ public class ClassesAndObjects {
         System.out.println("year: "+ myCar.year);
     }
 }
-class Person{
+class Person{ //Добавляем класс person
     String name;
     int age;
+    void speak(){ //Добавляем метод speak
+        System.out.println("Моё имя: "+ name +", и мне " + age);
+    }
 
 }
